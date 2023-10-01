@@ -191,7 +191,7 @@ header .navbar-toggler {
 }
 
 .banner {
-  background-color: #00C5FF;
+  background-color: #00218e;
   color: #fff;
   position: relative;
 }
@@ -1139,7 +1139,6 @@ input[type="submit"] {
     margin-left: auto;
     margin-right: auto;
     max-height: 62px;
-    display: block;
   }
 
   .banner {
@@ -1327,6 +1326,7 @@ input[type="submit"] {
   .benefits .container {
     padding: 0;
   }
+  
 
   .benefits table {
     table-layout: fixed;
