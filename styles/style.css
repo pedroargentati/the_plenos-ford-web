@@ -10,10 +10,12 @@
   display: none;
 }
 
+
 header{
   padding: 15px 0;
   display: flex;
 }
+
 
 .nav-item a {
   text-decoration: none;
@@ -130,7 +132,7 @@ header .navbar-toggler {
 
 .itemsbp span {
   font-weight: 600;
-  color: #29B6F6;
+  color: #00218e;
 }
 
 .plans {
@@ -456,7 +458,7 @@ header .navbar-toggler {
 }
 
 .title_bd {
-  color: #1E9EB7;
+  color: #00218e;
   text-align: center;
   font-weight: 700;
   margin-bottom: 50px;
