@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Interns - PANDB</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/logos/panda.png" type="image/png" />
+  <script src="jquery.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo">
+            <a href="./index.html"><img src="./assets/logos/Logo.jpg" class="img-fluid" alt="Logo Banco Pan."></a>
+          </div>
+
+          <div class="nav" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="./cliente-area.html"><button class="client">Atualização de
+                    dados</button></a>
+              </li>
+              <li class="nav-item"><a href="./new-client.html"><button style="background-color: #00C5FF">Cadastro
+                    Cliente</button></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 nomes">
+          <h1>The Interns</h1>
+          <ul>
+            <li>Felipe Otto <span>89108</span> </li>
+            <li>Pedro Argentati <span>88246</span></li>
+            <li>Pedro Henrique Castanheira <span>89199</span></li>
+            <li>Rafael Tannous <span>87486</span></li>
+            <li>Yasmin Verderame <span>87023</span> </li>
+          </ul>
+
+        </div>
+
+        <!-- <div class="col imagem-mobile">
+          <img class="img-group" src="/assets/images/undraw_team_collaboration_re_ow29.svg" alt="">
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="banco-dados" id="banco-dados">
+    <div class="itemsbp">
+      <div class="row">
+        <h2 class="title_bd">Banco de Dados</h2>
+        <div class="col-md-6">
+          <div class="itembp">
+            <h4>SQL Server</h4>
+            <span class="detail"></span>
+            <ul>
+              <li><span>Manutenção: </span>As tabelas armazenam índice - organizado.</li>
+              <li><span>Proteção: </span>Logins autenticados no nível da instância e no banco de dados.</li>
+              <li><span>Suporte: </span>Fornece notas técnicas, descrições de erros, scripts, sem custo adicional.
+              </li>
+              <li><span>Backup: </span>Permite backups completos, parciais e incrementais</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="itembp">
+            <h4>Oracle</h4>
+            <span class="detail"></span>
+            <ul>
+              <li><span>Manutenção: </span>Atualização estatística automática</li>
+              <li><span>Proteção: </span>Usuário autenticado via token de banco de dados</li>
+              <li><span>Suporte: </span>Chamada de suporte cobrada por cada caso de suporte.</li>
+              <li><span>Backup: </span>Backups de BD completos, nível de arquivo, incrementais e diferenciais.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="why">Escolhemos o <span>SQL Server</span> pelo fato do <span>Banco PAN</span> já utilizar este Banco
+          de Dados e poderemos reutilizar a
+          instância deles. Além deste fato, o SQL da microsoft é um dos <span>melhores do mercados</span>, e um dos
+          mais atuais,
+          assim gerando <span>confiabilidade e qualidade</span>.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 id="cloud">Cloud Banco PAN</h2>
+          <p class="cloud-p">Como citado, iremos criar uma nova database já em nuvem e o serviço que utilizaremos é o
+            Cloud SQL for SQL
+            Server da Google. Comparamos as pioneiras da Cloud Computing e, além de ter o preço mais acessível, atende a
+            todas as necessidades que o banco Pan necessita, como:</p>
+        </div>
+        <hr>
+      </div>
+      <div class="cloud">
+        <h4 class="linha-abs">Disponibilidade</h4>
+        <div class="cloud-imagem">
+          <img src="./assets/images/disponibilidade.png" alt="Disponibilidade Clouds">
+        </div>
+        <hr>
+        <h4 class="linha-abs">Disaster Recovery</h4>
+        <div class="cloud-imagem">
+          <img src="./assets/images/disasterrecovery.png" alt="Disaster Recovery Clouds">
+        </div>
+        <hr>
+        <h4 class="linha-abs">Segurança</h4>
+        <div class="cloud-imagem"><img src="./assets/images/seguranca.png" alt="Seguranças Clouds"></div>
+        <hr>
+        <h4 class="linha-abs">Escalabilidade</h4>
+        <div><img src="./assets/images/escalabilidade.png" alt="Disaster Recovery Clouds"></div>
+        <hr class="hr-cloud">
+      </div>
+    </div>
+
+    </div>
+    </div>
+    <h4 class="linha-abs">Preços</h4>
+    <div class="cloud-preco">
+      <img class="cloud-imagem-preco" src="./assets/images/table-amazonrds.jpeg" alt="">
+      <img class="cloud-imagem-preco" src="./assets/images/table-azure.jpeg" alt="">
+      <img class="cloud-imagem-preco" src="./assets/images/table-cloud.jpeg" alt="">
+    </div>
+    </div>
+  </section>
+
+  <section id="padronizacao" class="more-info">
+    <div class="background">
+      <div class="pages" id="padronizacao">
+        <div class="container center-padron">
+          <div class="row" style="margin-bottom: 70px;">
+            <h2 class="title_desp_dado">Despadronização dos Dados</h2>
+            <p class="pages-p">Agora, focando na despadronização dos dados (quando os usuários inserem o mesmo tipo de
+              informação de
+              maneiras distintas), iremos fazer uma validação no front end da aplicação, utilizando máscaras, para que
+              essas cheguem no back-end já normalizados.</p>
+            <div class="col-md-6">
+              <img src="./assets/images/rest.svg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Padronização dos
+                  Documentos</span><br><br>
+
+                Tratando dos documentos, começando pelo CPF, verificaremos sua validez através de seus dígitos
+                utilizando códigos em Javascript. Já outros documentos (RG e CNH) serão validados através de fotos
+                tiradas pelo próprio cliente feitas com reconhecimento de imagem através de nossa API com Python (Mais
+                informações).
+              </p>
+            </div>
+          </div>
+          <div class="row row-column-reverse-mobile" style="margin-bottom: 70px;">
+            <div class="col-md-6">
+              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">API de Validação
+                  Python</span><br><br>
+
+                Primeiramente, o cliente escolherá um dos documentos e, em seguida, tirará uma foto. Essa, no back-end
+                da aplicação, será transformada em uma String64 e, em seguida, transportada pela nossa API dentro de um
+                código JSON. Esse código, será interpretado e seu conteúdo (String64) será utilizada para a criação da
+                imagem do documento e, a mesma, terá seu conteúdo selecionado e armazenado. Esse conteúdo será
+                padronizado, inseridos em um novo código JSON e, por fim, retornando pela API para a aplicação, restando
+                ao cliente confirmar as informações retornadas.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="./assets/images/api.svg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 125px;">
+            <div class="col-md-6">
+              <img src="./assets/images/apirest.svg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Autenticação</span><br><br>
+                Em relação ao e-mail e telefone, utilizaremos o método de autenticação em dois fatores para validar a
+                veracidade. Isso será feito por meio de uma API criada pelo time de desenvolvimento que fará a
+                integração com as rotinas do Google Authenticator.</p>
+            </div>
+          </div>
+          <div class="row row-column-reverse-mobile" style="margin-bottom: 110px;">
+            <div class="col-md-6">
+              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Validação de
+                  Endereços</span><br><br>
+
+                Por último, no endereço, utilizaremos a API ViaCEP que valida o CEP e, caso exista, retorna dados
+                complementares do mesmo, restando ao cliente apenas inserir o número e complemento.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="./assets/images/browser.svg" alt="" class="img-fluid">
+            </div>
+          </div>
+
+          <h2 class="title_etl" style="text-align: center;">Transação de dados para o Banco de Dados</h2>
+          <span class="detail"></span>
+          <p class="pages-transacao" style="text-align: center;">Para enviar esses dados para o banco de dados, usaremos
+            REST
+            APIs, que são requisições que
+            permitem a comunicação de dados entre aplicações.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="etl" id="etl-id">
+    <div id="etl" class="background">
+      <div class="pages" id="etl">
+        <div class="container">
+          <div class="row" style="margin-bottom: 70px;">
+            <h2 class="title_etl" style="text-align: center; margin-top: 4rem;">ETL</h2>
+            <p class="pages-p" style="text-align: center;">Visando um maior aproveitamento de coleta de dados para o
+              Banco PAN, incluímos ao PANDB um processo de ETL para a recuperação de dados de clientes cadastrados na
+              base de dados antiga (Cli360). Esse ocorrerá da seguinte maneira:</p>
+            <div class="col-md-6">
+              <img style="margin-top: 32px" src="./assets/images/undraw_reviewed_docs_re_9lmr.svg" alt=""
+                class="img-fluid">
+            </div>
+            <div class="col-md-6 item-etl">
+              <p class="padronizacao-item-p"> <span style="color: #FF5630;" class="padronizacao-item-title">Formulário
+                  de Confirmação</span><br><br>
+                Criaremos um formulário de reconfirmação de dados que será enviado para todos os clientes cadastrados na
+                Cli360 via push. Esses, da próxima vez que acessarem suas contas no aplicativo ou site do Banco PAN,
+                terão de responde-lo obrigatoriamente para poderem continuarem navegando. Assim que fizerem, esses dados
+                serão encaminhados para a Amazon Glue para serem utilizados de parâmetro de ETL, visando a recuperação
+                de registros de contratações e produtos. <br>
+                Esses registros, caso encontrados, serão extraídos, transformados (para se adequarem às novas regras de
+                negócio), e carregados para a nova base sendo excluídos, ao final do processo, da Cli360. Essa última
+                ação, aos poucos, permitirá Banco PAN diminuir sua infraestrutura on-premisses, permitindo sua exclusão
+                futuramente.
+
+              </p>
+            </div>
+          </div>
+          <div class="row row-column-reverse-mobile" style="margin-bottom: 70px;">
+            <div class="col-md-6 item-etl">
+              <p class="padronizacao-item-p"> <span class="padronizacao-item-title" style="color: #FF5630;">Consultar
+                  Receita federal</span><br><br>
+                É inevitável que uma gama de clientes não responda ao formulário e, ao decorrer o tempo, não será
+                interessante para o Banco PAN continuar mantendo o servidor on-premisses por conta disso. Para
+                solucionarmos esse problema, utilizaremos os dados desses clientes como parâmetro para efetuar consultas
+                na SERPRO, uma API que acessa e retorna dados de pessoas registradas na base de dados da receita
+                federal. <br>
+                Cada retorno dessas consultas será cadastrado na nova base e novamente utilizado de parâmetro para um
+                novo processo de ETL que seguirá a mesma lógica da primeira, porem com alterações nos pipelines. Ao fim
+                desse processo poderemos eliminar servidor on-premisses por completo.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="./assets/images/undraw_firmware_re_fgdy.svg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <div class="download" id="planos">
+    <div class="container">
+      <div class="row">
+        <div class="col center">
+          <h2 class="download-title"><span class="azul">Quer</span> conhecer <br> <span class="azul">mais </span>sobre a
+            nossa <span class="azul">proposta?!</span></h2>
+          <p class="download-paragrafo">Faça o <span>download</span> dos documentos <span>completos</span> com a nossa
+            prosta <span>mais
+              detalhada!</span></p>
+          <div class="buttons-download">
+            <a href="/assets/files/Documentacao.pdf" target="_blank"><button>Documentação PanDB</button></a>
+            <a href="/assets/files/script-ddl.txt" target="_blank"><button>Comandos DDL</button></a>
+            <a href="/assets/files/diagrama.pdf" target="_blank"><button>Modelo Relacional</button></a>
+            <a href="/assets/files/Documentação Python.pdf" target="_blank"><button>API Validação Python</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video">
+    <h2 class="video-title">PanDB: A Solução para o Banco PAN</h2>
+    <iframe width="100%" height="515" src="https://www.youtube.com/embed/bAVinJoEOZU" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+
+  <section class="benefits">
+    <div class="container">
+      <div class="table-default">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                <h3>Nossos diferenciais:</h3>
+              </th>
+              <th>
+                <h5>PANDB</h5>
+              </th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fim de redundâncias e inconsistências</td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Dados verídicos </td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Backups automáticos</td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Segurança no acesso</td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Proveito de Informações (Cli360)</td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Fim do Servidor On-Premisses </td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Disponibilidade de Informações</td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Economia </td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Maiores Lucros</td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Tomadas de Decisões Acertivas </td>
+              <td><img src="./assets/images/checkmark2.svg" alt=""></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <a href="#" id="link-topo" title="Clique para voltar ao topo">&#9650;</a>
+  <footer>
+    <div class="container">
+
+      <p>Copyright ® 2022 All rights reserved
+        The Interns</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/logos/panda.png" type="image/png" />
+  <script type="text/javascript" src="./js/script.js"></script>
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
+  <title>The Interns - PANDB</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo">
+            <a href="./index.html"> <img src="./assets/logos/Logo.jpg" class="img-fluid" alt="Logo PANDB"></a>
+          </div>
+
+          <div class="nav" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="./cliente-area.html"><button class="client">Área do cliente</button></a>
+              </li>
+              <li class="nav-item"><a href="./new-client.html"><button style="background-color: #00C5FF">Abrir
+                    conta</button></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="form-title">
+    <h2>Abra sua conta e PAN!</h2>
+    <p>Uma conta todinha pensada para você comandar a sua vida financeira pelo celular.</p>
+  </div>
+
+  <div class="update-form">
+
+    <form method="get" action=".">
+      <h1>Dados pessoais</h1>
+      <div class="input-group">
+        <input type="text" placeholder="Nome completo" class="input" required>
+        <span class="border-bottom"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="CPF" class="input" required id="cpf" value="" maxlength="14" name="RegraValida"
+          onkeydown="javascript: fMasc( this, mCPF );" onblur="cpfCheck(this)">
+        <span class="border-bottom"></span>
+      </div>
+      <p id="isValidCPF">CPF Inválido. Favor verificar.</p>
+
+      <div class="input-group">
+        <input type="date" placeholder="Data de nascimento" class="input" required mask="00/00/0000">
+        <span class="border-bottom"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="Telefone" class="input" required id="phone" onkeypress="mask(this, mphone);"
+          onblur="mask(this, mphone);">
+        <span class="border-bottom"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="E-mail" class="input" id="email" required onblur="validaEmails(this)">
+        <span class="border-bottom"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="Confirme seu E-mail" class="input" id="emailConfirma" required
+          onblur="validaEmails(this)">
+        <span class="border-bottom"></span>
+      </div>
+      <p id="confirmEmail">Os emails não coincidem.</p>
+
+    </form>
+
+    <form method="get" action=".">
+      <h1>Endereço</h1>
+        <div class="input-group">
+        <input type="text" placeholder="CEP" class="input" name="cep" type="text" id="cep" value="" size="10"
+          maxlength="9" onblur="pesquisacep(this.value);">
+        <span class="border-bottom"></span>
+      </div>
+      <p id="isValidCEP">CEP não encontrado.</p>
+
+      <div class="input-group">
+        <input type="text" placeholder="Rua" class="input" id="rua" size="60">
+        <span class="border-bottom"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="Bairro" class="input" id="bairro" size="60">
+        <span class="border-bottom"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="Cidade" class="input" id="cidade" size="60">
+        <span class="border-bottom"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="Estado" class="input" id="uf" size="2">
+        <span class="border-bottom"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="IBGE" class="input" id="ibge" size="8">
+        <span class="border-bottom"></span>
+      </div>
+
+      <input type="submit" name="" value="Continuar">
+    </form>
+
+  </div>
+  <footer>
+    <div class="container">
+
+      <p>Copyright ® 2022 All rights reserved
+        The Interns</p>
+    </div>
+  </footer>
+</body>
+
+</html>
