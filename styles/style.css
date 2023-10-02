@@ -16,6 +16,12 @@ header{
   display: flex;
 }
 
+.animate-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
 
 .nav-item a {
   text-decoration: none;
@@ -89,7 +95,7 @@ header .navbar-toggler {
 #link-topo {
   text-decoration: none;
   color: white;
-  background-color: #00C5FF;
+  background:linear-gradient(to bottom,#00218e,#3a68ff );
   padding: 0.725rem 0.980rem;
   position: fixed;
   right: 0.725rem;
@@ -161,7 +167,7 @@ header .navbar-toggler {
   width: 260px;
   height: 62px;
   margin-right: 17px;
-  background: #00C5FF;
+  background: #00218e;
   color: #fff;
   font-weight: 600;
   border-radius: 10px;
@@ -185,7 +191,7 @@ header .navbar-toggler {
 }
 
 .azul {
-  color: #00C5FF;
+  color: #00218e;
 }
 
 .buttons-download {
@@ -193,13 +199,13 @@ header .navbar-toggler {
 }
 
 .banner {
-  background-color: #00218e;
+  background-color:#a6a4a4;
   color: #fff;
   position: relative;
 }
 
 .banner::before {
-  content: '';
+  /* content: '';
   z-index: 1;
   position: absolute;
   top: -1px;
@@ -208,11 +214,11 @@ header .navbar-toggler {
   bottom: 0;
   padding: 1rem;
   clip-path: polygon(0 0, 0 8%, 100% 0);
-  background: #fff;
+  background: #fff; */
 }
 
 .banner::after {
-  content: '';
+  /* content: '';
   z-index: 1;
   position: absolute;
   left: 0;
@@ -221,7 +227,7 @@ header .navbar-toggler {
   top: 0;
   padding: 1rem;
   clip-path: polygon(0 100%, 100% 100%, 100% 94%);
-  background: #fff;
+  background: #fff; */
 }
 
 .banner .mockup {
@@ -588,7 +594,7 @@ header .navbar-toggler {
 }
 
 .padronizacao-item-title {
-  color: #005c95;
+  color: #ffffff;
   font-size: 22px !important;
   font-weight: 600 !important;
 }
@@ -623,8 +629,8 @@ header .navbar-toggler {
 }
 
 .more-info {
-  background-color: #29B6F6;
-  margin-top: 20px;
+  background: linear-gradient(to bottom,  #00218e,#a6a4a4);
+  /* margin-top: 20px; */
   padding-top: 50px;
 }
 
@@ -672,6 +678,8 @@ span.detail {
   background-color: #00C5FF;
 }
 
+
+
 .video::after {
   content: '';
   z-index: 1;
@@ -682,7 +690,7 @@ span.detail {
   top: 0;
   padding: 1rem;
   clip-path: polygon(0 100%, 100% 100%, 100% 95%);
-  background: #1E9EB7;
+  background:linear-gradient(to left, #00165e,#ffffff);
 }
 
 iframe {
