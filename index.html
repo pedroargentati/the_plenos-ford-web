@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
   <header class="header" style="background-color: #00218e;">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-        <div style="display: flex; justify-content: center;" class="container-fluid">
+        <div style="display: flex; justify-content: center; margin-left: 15px;" class="container-fluid">
           <div style="width: 15vh;" class="logo">
             <a href="./index.html"><img src="./assets/logos/ForfFuel.png" class="img-fluid" alt="Logo Banco Pan."></a>
           </div>
@@ -78,67 +78,68 @@
       <div class="pages" id="padronizacao">
         <div class="container center-padron">
           <h2 class="title_desp_dado">Arquitetura Ford Fuel</h2>
-          <p class="pages-p">A seguir, segue as explicações das tecnologias usadas para o desenvolvimento, com suas específicações e aplicabilidade no projeto.</p>
-          <div class="row row-lang-div">
-              <div class="col-md-6 img-lang">
-                <img src="./assets/images/icons8-logotipo-da-primavera-240.png" alt="" class="img-fluid">
-              </div>
-              <div class="col-md-6 img-lang">
-                <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Java Spring Boot</span><br><br>
-                  Será utilizado o SDK 17 do Java no desenvolvimento de APIs (Application Programming Interfaces),
-                  seguindo a arquitetura de microsserviços.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row" style="margin-bottom: 90px; align-items: center; justify-content: center;">
-            <div class="col-md-6">
-              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">API de Scraping em
-                  Python</span><br><br>
-                Uma requisição GET será originada a partir do back-end da aplicação, contendo o endereço como parâmetro.
-                Esse endereço será empregado nas buscas realizadas pelo programa de web scraping programado. Se o nome
-                do estabelecimento for encontrado, ele será devolvido à aplicação de origem.</p>
-            </div>
-            <div class="col-md-6 img-lang">
-              <img src="./assets/images/icons8-python-240.png" alt="" class="img-fluid">
-            </div>
-          </div>
-          
+          <p class="pages-p">A seguir, segue as explicações das tecnologias usadas para o desenvolvimento, com suas
+            específicações e aplicabilidade no projeto.</p>
           <div class="row row-lang-div">
             <div class="col-md-6 img-lang">
-              <img src="./assets/images/icons8-flutter-240.png" alt="" class="img-fluid">
+              <img src="./assets/images/icons8-logotipo-da-primavera-240.png" alt="" class="img-fluid">
             </div>
-            <div class="col-md-6">
-              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Front-End em Flutter</span><br><br>
-                Será utilizado no Visual Studio Code para criar as telas adicionais e fazer modificações em algumas
-                telas do aplicativo Ford Pass, a fim de incluir funcionalidades extras.</p>
-            </div>
-          </div>
-
-          <div class="row" style="margin-bottom: 110px;">
-            <div class="col-md-6">
-              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Power BI</span><br><br>
-                Será utilizado para integrar a base de dados e automatizar a criação de relatórios semanais através de
-                dashboards.
+            <div class="col-md-6 img-lang">
+              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Java Spring Boot</span><br><br>
+                Será utilizado o SDK 17 do Java no desenvolvimento de APIs (Application Programming Interfaces),
+                seguindo a arquitetura de microsserviços.
               </p>
             </div>
-            <div class="col-md-6 img-lang">
-              <img src="./assets/images/icons8-power-bi-250.png" alt="" class="img-fluid">
-            </div>
-          </div>
-
-          <div class="text-mobile">
-            <h2 class="title_etl" style="text-align: center;">Transação de dados para o Banco de Dados</h2>
-            <span class="detail"></span>
-            <p class="pages-transacao" style="text-align: center;">Para enviar esses dados para o banco de dados, usaremos
-              REST
-              APIs, que são requisições que
-              permitem a comunicação de dados entre aplicações.
-            </p>
           </div>
         </div>
+
+        <div class="row" style="margin-bottom: 90px; align-items: center; justify-content: center;">
+          <div class="col-md-6">
+            <p class="padronizacao-item-p"> <span class="padronizacao-item-title">API de Scraping em
+                Python</span><br><br>
+              Uma requisição GET será originada a partir do back-end da aplicação, contendo o endereço como parâmetro.
+              Esse endereço será empregado nas buscas realizadas pelo programa de web scraping programado. Se o nome
+              do estabelecimento for encontrado, ele será devolvido à aplicação de origem.</p>
+          </div>
+          <div class="col-md-6 img-lang">
+            <img src="./assets/images/icons8-python-240.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row row-lang-div">
+          <div class="col-md-6 img-lang">
+            <img src="./assets/images/icons8-flutter-240.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Front-End em Flutter</span><br><br>
+              Será utilizado no Visual Studio Code para criar as telas adicionais e fazer modificações em algumas
+              telas do aplicativo Ford Pass, a fim de incluir funcionalidades extras.</p>
+          </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 110px;">
+          <div class="col-md-6">
+            <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Power BI</span><br><br>
+              Será utilizado para integrar a base de dados e automatizar a criação de relatórios semanais através de
+              dashboards.
+            </p>
+          </div>
+          <div class="col-md-6 img-lang">
+            <img src="./assets/images/icons8-power-bi-250.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="text-mobile">
+          <h2 class="title_etl" style="text-align: center;">Transação de dados para o Banco de Dados</h2>
+          <span class="detail"></span>
+          <p class="pages-transacao" style="text-align: center;">Para enviar esses dados para o banco de dados, usaremos
+            REST
+            APIs, que são requisições que
+            permitem a comunicação de dados entre aplicações.
+          </p>
+        </div>
       </div>
+    </div>
     </div>
     </div>
   </section>
@@ -197,10 +198,11 @@
             prosta <span>mais
               detalhada!</span></p>
           <div class="buttons-download">
-            <a href="/assets/files/Sprint 4 (The Plenos).docx.pdf" target="_blank"><button>Documentação Ford Fuel</button></a>
+            <a href="/assets/files/Sprint 4 (The Plenos).docx.pdf" target="_blank"><button>Documentação Ford
+                Fuel</button></a>
             <a href="/assets/files/Script.txt" target="_blank"><button>Comandos DDL</button></a>
             <a href="/assets/files/ModeloRelacional.pdf" target="_blank"><button>Modelo Relacional</button></a>
-            <a href="/assets/files/Documentação Python.pdf" target="_blank"><button disabled 
+            <a href="/assets/files/Documentação Python.pdf" target="_blank"><button disabled
                 style="background-color: gray;">API em Python</button></a>
           </div>
         </div>
@@ -211,7 +213,8 @@
   <div class="video">
     <h2 class="video-title" style="color: #00218e;">Ford Fuel: A Solução para o Ford</h2>
     <!-- --TODO colocar o video do ultimo pitch -->
-    <iframe width="100%" height="515" src="https://www.youtube.com/embed/M9I5FjRoR8c" title="The Plenos - Challenge Ford - Sprint 4" frameborder="0"
+    <iframe width="100%" height="515" src="https://www.youtube.com/embed/M9I5FjRoR8c"
+      title="The Plenos - Challenge Ford - Sprint 4" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
