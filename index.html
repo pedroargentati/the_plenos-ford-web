@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <title>The Plenos - Ford Fuel</title>
@@ -16,22 +16,20 @@
 
 <body>
   <header class="header">
-    <div>
-      <img src="./assets/logos/ForfFuel.png" style="width: 100px" alt="Logo Ford Fuel">
+    <div class="header-container-img nimate-item animate__animated animate__fadeInUp">
+      <img src="./assets/logos/ForfFuel.png" class="header-img" alt="Logo Ford Fuel">
     </div>
-    <div class="div__menu__Header">
+    <div class="div__menu__Header nimate-item animate__animated animate__fadeInUp">
       <a class="menu__Header" href="#Proposta">Proposta</a>
       <a class="menu__Header" href="#Arquitetura">Arquitetura</a>
       <a class="menu__Header" href="#Vantagens">Vantagens</a>
     </div>
   </header>
 
-
-
   <section id="Proposta">
-    <h1 class="titulo">Revolução no Abastecimento</h1>
+    <h1 class="titulo nimate-item animate__animated animate__fadeInUp">Revolução no Abastecimento</h1>
     <span class="detail"></span>
-    <div class="texto">
+    <div class="texto nimate-item animate__animated animate__fadeInUp">
       <p>Imagine nunca mais se preocupar em abastecer seu veículo com <span class="texto_destaque">combustível
           adulterado</span>. Com o
         <span class="texto_destaque">Ford Fuel</span>, essa
@@ -46,13 +44,13 @@
         levanta preocupações sobre a segurança nas estradas e contribui para a poluição do ar. É um problema que exige
         uma <span class="texto_destaque">solução inovadora</span>, e o Ford Fuel está aqui para oferecer exatamente
         isso.</p>
-      <p>Nossa abordagem única baseia-se em <span class="texto_destaque">três pilares</span> essenciais:</p>
+      <p class="abordagem">Nossa abordagem única baseia-se em <span class="texto_destaque">três pilares</span> essenciais:</p>
       <div class="pilares_ford_fuel">
 
         <div class="pilar_ford col-md-6 animate-item animate__animated animate__fadeInUp">
           <h1 class="subtitulo">Histórico Abastecimento</h1>
           <span class="detail"></span>
-          <ul>
+          <ul class="pillar-ul-padding">
             <li><span class="texto_destaque">Ford Pass</span>: Implementação da funcionalidade ao aplicativo.</li>
             <li><span class="texto_destaque">Localização</span>: Informações da localização do abastecimento.</li>
             <li><span class="texto_destaque">Informações</span>: Informações sobre o combustível do abastecimento.</li>
@@ -63,7 +61,7 @@
         <div class="pilar_ford col-md-6 animate-item animate__animated animate__fadeInUp">
           <h1 class="subtitulo">Denúncia Automática</h1>
           <span class="detail"></span>
-          <ul>
+          <ul class="pillar-ul-padding">
             <li><span class="texto_destaque">Periodização</span>: Relatórios de denúncia gerados mensalmente.</li>
             <li><span class="texto_destaque">Indicadores</span>: Indicadores que permitem a ampliação de ciencia.</li>
             <li><span class="texto_destaque">Relatórios</span>: Dashboards informativas com indicadores gerais.</li>
@@ -73,7 +71,7 @@
         <div class="pilar_ford col-md-6 animate-item animate__animated animate__fadeInUp">
           <h1 class="subtitulo">Parcerias com Postos</h1>
           <span class="detail"></span>
-          <ul>
+          <ul class="pillar-ul-padding">
             <li><span class="texto_destaque">Contatação</span>: identificação e abordagem desses estabelecimentos.</li>
             <li><span class="texto_destaque">Parceria</span>: Usuário autenticado via token de banco de dados</li>
             <li><span class="texto_destaque">Reconhecimento</span>: Pesquisas no banco para obtenção desses.</li>
@@ -89,10 +87,10 @@
   </section>
 
   <section style="background-color: #979797;" id="Arquitetura">
-    <h1 class="titulo white_font">Arquitetura de Solução</h1>
+    <h1 class="titulo white_font p-5">Arquitetura de Solução</h1>
 
     <div class="texto white_font">
-      <p>
+      <p class="texto">
         Bem-vindo à <span class="texto_destaque_2">era revolucionária</span> do abastecimento de combustível com a
         arquitetura <span class="texto_destaque_2">Ford Fuel</span>. Estamos propondo uma transformanção geral na
         maneira é exergado o abastecimento, combinando tecnologia de ponta com parcerias estratégicas para garantir o
@@ -100,12 +98,14 @@
         do <span class="texto_destaque_2">combustível adulterado</span> e a prevalencia unica e exclusiva de <span
           class="texto_destaque_2">combustível de qualidade</span>. Neste guia, vamos explorar em
         detalhes como nossa arquitetura pode vir a moldar
-        futuro, tornando o abastecimento mais <span class="texto_destaque_2">transparente e confiável</span></p>
-      <div class="container_img_texto">
+        futuro, tornando o abastecimento mais <span class="texto_destaque_2">transparente e confiável</span>
+			</p>
+
+      <div class="container_img_texto row-lang-div">
         <div class="col-md-6 img-lang">
           <img style="margin-top: 32px" src="./assets/images/ia-etl.svg" alt="" class="img-fluid">
         </div>
-        <div class="col-md-6 item-etl">
+        <div class="col-md-6">
           <h1 class="subtitulo" style="font-weight: bold;">Obtenção de Dados</h1>
           <p class="texto">
             A Ford, com seus investimentos em tecnologia, apresenta inúmeros sensores equipados em seus veículos
@@ -116,11 +116,13 @@
           </p>
         </div>
       </div>
+
       <div class="container_img_texto">
-        <div class="col-md-6 item-etl">
+
+        <div class="col-md-6">
           <h1 class="subtitulo" style="font-weight: bold;">Envio de Dados</h1>
           <p class="texto">
-            A <span class="texto_destaque_2">TMC (Transportation Mobility Cloud)</span> é a tecnologia interna da Ford
+            A <span class="texto_destaque_2">TMC</span> (Transportation Mobility Cloud) é a tecnologia interna da Ford
             que desempenha o papel de <span class="texto_destaque_2">transferência de dados</span> provenientes desses
             sensores para o banco de dados...
           </p>
@@ -129,11 +131,15 @@
         <div class="col-md-6 img-lang">
           <img style="margin-top: 32px" src="./assets/images/etl_bp.svg" alt="" class="img-fluid">
         </div>
+
       </div>
-      <div class="container_img_texto">
+
+      <div class="container_img_texto row-lang-div">
+
         <div class="col-md-6 img-lang">
           <img style="margin-top: 32px" src="./assets/images/undraw_updates_re_o5af.svg" alt="" class="img-fluid">
         </div>
+
         <div class="col-md-6 item-etl">
           <h1 class="subtitulo" style="font-weight: bold;">Armazenamento de Dados</h1>
           <p class="texto">
@@ -142,13 +148,15 @@
             e script de criação estão <span class="texto_destaque_2">disponíveis para download</span>...
           </p>
         </div>
+
       </div>
+
   </section>
 
   <section id="Proposta">
     <div class="texto">
       <div class="container_img_texto">
-        <div class="col-md-6 item-etl">
+        <div class="col-md-6">
           <h1 class="subtitulo" style="font-weight: bold;">Obtendo o Endereço</h1>
           <p class="texto">
             Para enriquecer o histórico de abastecimento, construímos uma <span class="texto_destaque">API</span>
@@ -166,11 +174,11 @@
           <img style="margin-top: 32px" src="./assets/images/api.svg" alt="" class="img-fluid">
         </div>
       </div>
-      <div class="container_img_texto">
+      <div class="container_img_texto row-lang-div">
         <div class="col-md-6 img-lang">
           <img style="margin-top: 32px" src="./assets/images/apirest.svg" alt="" class="img-fluid">
         </div>
-        <div class="col-md-6 item-etl">
+        <div class="col-md-6">
           <h1 class="subtitulo" style="font-weight: bold;">Nome do Posto</h1>
           <p class="texto">
             Com os dados do endereço em mãos, podemos agora obter o nome do posto. Com as coordenadas aliadas aos
@@ -183,7 +191,7 @@
         </div>
       </div>
       <div class="container_img_texto">
-        <div class="col-md-6 item-etl">
+        <div class="col-md-6">
           <h1 class="subtitulo" style="font-weight: bold;">Confirmação do Nome</h1>
           <p class="texto">
             Dentro da mesma requisição, montamos uma lógica de <span class="texto_destaque">machine learning</span> que,
@@ -201,8 +209,8 @@
   </section>
 
   <section style="background-color: #979797;" id="Arquitetura">
-    <div class="texto white_font">
-      <div class="container_img_texto">
+    <div class="texto white_font pb-lg-5">
+      <div class="container_img_texto p-6 row-lang-div">
         <div class="col-md-6 img-lang">
           <img style="margin-top: 32px" src="./assets/images/rest.svg" alt="" class="img-fluid">
         </div>
@@ -215,7 +223,6 @@
               class="texto_destaque_2">Flutter</span> e construimos o back-end de comunicação com
             <span class="texto_destaque_2">SpringBoot</span> em Java... Nele, o usuário podera ver os dados citados
             anteriormente...
-
 
           </p>
         </div>
@@ -232,105 +239,21 @@
 
         </div>
         <div class="col-md-6 img-lang">
-          <img style="margin-top: 32px" src="./assets/images/etl_bp.svg" alt="" class="img-fluid">
+          <img style="margin-top: 32px" src="./assets/images/undraw_secure_login_pdn4.svg" alt="" class="img-fluid">
         </div>
       </div>
-      <div class="container_img_texto">
+      <div class="container_img_texto row-lang-div">
         <div class="col-md-6 img-lang">
-          <img style="margin-top: 32px" src="./assets/images/undraw_updates_re_o5af.svg" alt="" class="img-fluid">
+          <img style="margin-top: 32px" src="./assets/images/undraw_team_collaboration_re_ow29.svg" alt="" class="img-fluid">
         </div>
         <div class="col-md-6 item-etl">
-          <h1 class="subtitulo" style="font-weight: bold;">Armazenamento de Dados</h1>
+          <h1 class="subtitulo" style="font-weight: bold;">Parceria com Postos</h1>
           <p class="texto">
-            Dado que não temos acesso à modelagem do banco de dados da Ford, criamos um banco de dados de demonstração
-            usando o <span class="texto_destaque_2">Big Query</span>, uma tecnologia já adotada pela Ford. Sua modelagem
-            e script de criação estão <span class="texto_destaque_2">disponíveis para download</span>...
+            Com os registros de abastecimento no banco, através de <span class="texto_destaque_2">consultas SQL</span> poderemos selecionar os postos que
+            tiverem os melhores registros contactando-os e oferecendo <span class="texto_destaque_2">parcerias</span>.
           </p>
         </div>
       </div>
-  </section>
-
-  <h1 class="titulo">Revolução no Abastecimento</h1>
-  <div class="itemsbp">
-    <div class="row">
-      <h2 class="title_bd">Banco de Dados</h2>
-
-      <p class="why">Escolhemos o <span>BigQuery</span> pelo fato da <span>Ford</span> já utilizar este Banco
-        de Dados e poderemos reutilizar a
-        instância deles. Além deste fato, o BigQuery é um dos <span>melhores do mercados</span>, e um dos
-        mais atuais,
-        assim gerando <span>confiabilidade e qualidade</span>.</p>
-    </div>
-  </div>
-  <div class="background">
-    <div class="pages">
-      <div id="Arquitetura" class="container center-padron">
-        <h2 class="title_desp_dado">Arquitetura Ford Fuel</h2>
-        <p class="pages-p">A seguir, segue as explicações das tecnologias usadas para o desenvolvimento, com suas
-          específicações e aplicabilidade no projeto.</p>
-        <div class="row row-lang-div">
-          <div class="col-md-6 img-lang">
-            <img src="./assets/images/icons8-logotipo-da-primavera-240.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-6 img-lang">
-            <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Java Spring Boot</span><br><br>
-              Será utilizado o SDK 17 do Java no desenvolvimento de APIs (Application Programming Interfaces),
-              seguindo a arquitetura de microsserviços.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" style="margin-bottom: 90px; align-items: center; justify-content: center;">
-        <div class="col-md-6">
-          <p class="padronizacao-item-p"> <span class="padronizacao-item-title">API de Scraping em
-              Python</span><br><br>
-            Uma requisição GET será originada a partir do back-end da aplicação, contendo o endereço como parâmetro.
-            Esse endereço será empregado nas buscas realizadas pelo programa de web scraping programado. Se o nome
-            do estabelecimento for encontrado, ele será devolvido à aplicação de origem.</p>
-        </div>
-        <div class="col-md-6 img-lang">
-          <img src="./assets/images/icons8-python-240.png" alt="" class="img-fluid">
-        </div>
-      </div>
-
-      <div class="row row-lang-div">
-        <div class="col-md-6 img-lang">
-          <img src="./assets/images/icons8-flutter-240.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-6">
-          <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Front-End em Flutter</span><br><br>
-            Será utilizado no Visual Studio Code para criar as telas adicionais e fazer modificações em algumas
-            telas do aplicativo Ford Pass, a fim de incluir funcionalidades extras.</p>
-        </div>
-      </div>
-
-      <div class="row" style="margin-bottom: 110px;">
-        <div class="col-md-6">
-          <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Power BI</span><br><br>
-            Será utilizado para integrar a base de dados e automatizar a criação de relatórios semanais através de
-            dashboards.
-          </p>
-        </div>
-        <div class="col-md-6 img-lang">
-          <img src="./assets/images/icons8-power-bi-250.png" alt="" class="img-fluid">
-        </div>
-      </div>
-
-      <div class="text-mobile">
-        <h2 class="title_etl" style="text-align: center;">Transação de dados para o Banco de Dados</h2>
-        <span class="detail"></span>
-        <p class="pages-transacao" style="text-align: center;">Para enviar esses dados para o banco de dados,
-          usaremos
-          REST
-          APIs, que são requisições que
-          permitem a comunicação de dados entre aplicações.
-        </p>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
   </section>
 
   <section class="etl">
@@ -359,8 +282,8 @@
           </div>
           <div class="row row-column-reverse-mobile" style="margin-bottom: 70px;">
             <div class="col-md-6 item-etl">
-              <p class="padronizacao-item-p"> <span class="padronizacao-item-title" style="color: #00218e;">Integração
-                  com o Aplicativo FordPass</span><br><br>
+              <p class="padronizacao-item-p">
+								<span class="padronizacao-item-title" style="color: #00218e;">Integração com o Aplicativo FordPass</span><br><br>
                 O FordPass é um aplicativo inovador que oferece uma variedade de recursos para os motoristas, com a
                 integração da nossa solução, os usuários poderão acessar facilmente informações cruciais sobre a
                 qualidade do combustível diretamente em seus smartphones.
@@ -427,7 +350,7 @@
               <td><img src="./assets/images/checkmark2.svg" alt=""></td>
             </tr>
             <tr>
-              <td>Diminuirção da comercialização de combustível adulterado </td>
+              <td>Diminuição da comercialização de combustível adulterado </td>
               <td><img src="./assets/images/checkmark2.svg" alt=""></td>
             </tr>
             <tr>
@@ -439,11 +362,11 @@
               <td><img src="./assets/images/checkmark2.svg" alt=""></td>
             </tr>
             <tr>
-              <td>Aumento da reputação e reconhecimento da Ford </td>
+              <td>Diminuição de gastos em manutenção</td>
               <td><img src="./assets/images/checkmark2.svg" alt=""></td>
             </tr>
             <tr>
-              <td>Diminuição de gastos em manutenção</td>
+              <td>Aumento da reputação e reconhecimento da Ford </td>
               <td><img src="./assets/images/checkmark2.svg" alt=""></td>
             </tr>
             <tr>
@@ -460,33 +383,27 @@
     </div>
   </section>
 
-  <section style="background-color: #343434;">
+  <section style="background-color: #343434;" class="p-3">
     <div>
       <h1 class="titulo white_font">The Plenos</h1>
     </div>
 
-    <div class="container">
-
-      <div class="row white_font">
-        <div class="col-md-4 nomes">
-          <ul>
-            <li>Felipe Otto <span>89108</span> </li>
-            <li>Pedro Argentati <span>88246</span></li>
-            <li>Bruno Henrique Ferraz <span>87740</span></li>
-            <li>Rafael Tannous <span>87486</span></li>
-            <li>João Henrique Pinto <span>86913</span> </li>
-          </ul>
-        </div>
+    <div class="row white_font center">
+      <div class="col-md-4 nomes">
+        <ul>
+          <li>Felipe Otto <span>89108</span> </li>
+          <li>Pedro Argentati <span>88246</span></li>
+          <li>Bruno Ferraz <span>87740</span></li>
+          <li>Rafael Tannous <span>87486</span></li>
+          <li>João Henrique<span>86913</span> </li>
+        </ul>
       </div>
     </div>
   </section>
 
-
   <footer>
     <div class="container">
-
-      <p>Copyright ® 2023 All rights reserved
-        The Plenos</p>
+      <p>Copyright ® 2023 All rights reserved The Plenos</p>
     </div>
   </footer>
 </body>
