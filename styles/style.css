@@ -190,12 +190,32 @@ section {
   flex-direction: column;
 }
 
+.nome {
+  width: 20rem;
+  height: 5rem;
+  background-color: white;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  border-radius: 3rem;
+}
+
+.span-nome {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .nomes {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.nome-link {
+  cursor: pointer;
 }
 
 .nomes li {
@@ -208,7 +228,7 @@ section {
   background-color: rgba(255, 255, 255, 0.1); /* efeito hover sutil */
 }
 
-.nomes span {
+.nome-rm {
   color: #028dbb;
   font-weight: 900;
   margin-left: 20px;
