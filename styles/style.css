@@ -82,6 +82,19 @@ section {
   justify-content: space-around;
 }
 
+#link-topo {
+  text-decoration: none;
+  color: white;
+  background:linear-gradient(to bottom,#00218e,#3a68ff );
+  padding: 0.725rem 0.980rem;
+  position: fixed;
+  right: 0.725rem;
+  bottom: 0.625rem;
+  box-shadow: 0.188rem 0.188rem 0.625rem #333;
+  scroll-behavior: smooth;
+  border-radius: 6px;
+}
+
 /* Header */
 
 .header {
