@@ -218,6 +218,10 @@ section {
   cursor: pointer;
 }
 
+.svg-linkedin:hover path:first-child {
+    fill: #039be5; /* Cor mais clara para o hover */
+}
+
 .nomes li {
   text-align: center;
 }
@@ -1162,7 +1166,13 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 3rem;
   }
+  
+  .nome {
+    margin-bottom: 3rem;
+  }
+
 
   form {
     width: 100%;
