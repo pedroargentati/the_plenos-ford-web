@@ -1,6 +1,119 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap%27');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Formatação */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+section {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  width: 100%;
+  justify-self: center;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+  color: #000956;
+  margin-bottom: 1%;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 1%;
+}
+
+.texto {
+  max-width: 1000px;
+  padding-left: 2%;;
+  padding-right: 2%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.texto_destaque {
+  font-weight: 600;
+  color: #028dbb;
+}
+
+.container_img_texto {
+  margin-top: 5%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.margin_menor {
+  margin-top: none;
+}
+
+.texto_destaque_2 {
+  font-weight: 600;
+  color: #252525;
+}
+
+.pilares_ford_fuel {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* Header */
+
+.header{
+  min-height: 4.6875rem;
+  width: 100%;
+  display: flex;
+  align-items: center;  
+  border-bottom: 1px solid rgb(255, 255, 255);
+  justify-content: space-between;
+}
+
+.div__menu__Header{
+  padding-right: 3.5%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__Header{
+  text-decoration: none;
+  padding: 0.3125rem 0.625rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: #028dbb;
+ }
+
+
+.menu__Header:hover {
+  color: #1b394e; /* Cor ao passar o mouse */
+}
+
+
 /*========== Fonts ==========*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap%27');
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -11,10 +124,7 @@
 }
 
 
-header{
-  padding: 15px 0;
-  display: flex;
-}
+
 
 .animate-item {
   opacity: 0;
@@ -27,84 +137,6 @@ header{
   text-decoration: none;
 }
 
-header .nav ul {
-  display: flex;
-  margin-left: auto;
-  list-style: none;
-  margin-bottom: 0;
-}
-
-header .nav ul li {
-  line-height: 40px;
-  margin-right: 20px;
-  color: #4F4C4D;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-header .nav ul button {
-  background: #9E9E9E;
-  border-radius: 15px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
-  width: 180px;
-  height: 50px;
-  color: #fff;
-  text-transform: uppercase;
-  border: 0px;
-}
-
-header .nav ul button:hover {
-  font-weight: 900;
-  letter-spacing: 1px;
-  stroke-width: 5;
-  stroke-dasharray: 15, 310;
-  stroke-dashoffset: 48;
-  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-header .navbar-toggler {
-  border: 0;
-}
-
-#isValidCPF {
-  color: red;
-  font-weight: 500;
-  float: left;
-  display: none;
-  margin-bottom: -24px;
-}
-
-#confirmEmail {
-  color: red;
-  font-weight: 500;
-  float: left;
-  display: none;
-  margin-bottom: -24px;
-}
-
-#isValidCEP {
-  color: red;
-  font-weight: 500;
-  float: left;
-  display: none;
-  margin-bottom: -24px;
-}
-
-#link-topo {
-  text-decoration: none;
-  color: white;
-  background:linear-gradient(to bottom,#00218e,#3a68ff );
-  padding: 0.725rem 0.980rem;
-  position: fixed;
-  right: 0.725rem;
-  bottom: 0.625rem;
-  box-shadow: 0.188rem 0.188rem 0.625rem #333;
-  scroll-behavior: smooth;
-  border-radius: 6px;
-}
-
 .banco-dados {
   font-family: 'Poppins', sans-serif;
   background-size: 1500px;
@@ -115,31 +147,32 @@ header .navbar-toggler {
   background-position-x: center;
 }
 
-.itemsbp {
-  max-width: 800px;
-  margin: 0 auto;
-  margin-right: none ;
+.blue {
+  background: linear-gradient(to bottom,  #979797, #ffffff);
 }
 
-.itembp {
+.white_font {
+  color: white;
+}
+
+.grey_font {
+  color: #979797
+}
+
+.pilar_ford {
   margin: 0 20px;
+  width: auto;
   text-align: center;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 3px 6px #236ea140;
   border: 1px solid #236ea138;
   border-radius: 10px;
+  padding: 30px;
   margin-bottom: 27px;
-  padding: 2rem 1rem;
+  height: auto;
 }
 
-.itembp h4 {
-  text-align: center;
-}
 
-.itemsbp span {
-  font-weight: 600;
-  color: #00218e;
-}
 
 .plans {
   padding-top: 0px;
@@ -150,9 +183,6 @@ header .navbar-toggler {
   flex-direction: column;
 }
 
-#link-topo:hover {
-  background-color: #29B6F6;
-}
 
 .center {
   margin: 0 auto;
@@ -186,49 +216,14 @@ header .navbar-toggler {
   margin-bottom: 30px;
 }
 
-.download-paragrafo span {
-  font-weight: 600;
-}
 
-.azul {
-  color: #00218e;
-}
+
 
 .buttons-download {
   display: flex;
 }
 
-.banner {
-  background-color:#a6a4a4;
-  color: #fff;
-  position: relative;
-}
 
-.banner::before {
-  /* content: '';
-  z-index: 1;
-  position: absolute;
-  top: -1px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1rem;
-  clip-path: polygon(0 0, 0 8%, 100% 0);
-  background: #fff; */
-}
-
-.banner::after {
-  /* content: '';
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  top: 0;
-  padding: 1rem;
-  clip-path: polygon(0 100%, 100% 100%, 100% 94%);
-  background: #fff; */
-}
 
 .banner .mockup {
   z-index: 2;
@@ -291,10 +286,6 @@ header .navbar-toggler {
   margin-bottom: 5px;
 }
 
-.banner .price h5 span {
-  font-size: 44px;
-  font-weight: 600;
-}
 
 .banner h6 {
   font-size: 20px;
@@ -303,9 +294,6 @@ header .navbar-toggler {
   max-width: 300px;
 }
 
-.banner .price h6 span {
-  color: #95EF76;
-}
 
 .banner .info ul {
   list-style: none;
@@ -366,14 +354,9 @@ header .navbar-toggler {
   margin-bottom: 10px;
 }
 
-.why-answer-by-whatsapp .item:hover {
-  background-color: #1E9EB7;
-}
 
 
-.why-answer-by-whatsapp .item:hover {
-  color: #fff;
-}
+
 
 
 .plans {
@@ -571,32 +554,12 @@ header .navbar-toggler {
 .hr-cloud {
   color: #00C5FF;
 }
+
 .linha-abs {
   font-size: 22px !important;
   font-weight: 600 !important;
   margin: 50px 0px 25px 0px;
   color: #000;
-}
-
-.cloud {
-  flex-direction: column;
-  display: flex;
-  width: 100%;
-}
-
-.cloud-imagem {}
-
-.cloud-imagem-preco {
-  width: 30%;
-}
-
-.cloud-preco {
-  display: flex;
-  justify-content: space-around;
-
-  margin-top: 50px;
-  width: 100%;
-  margin-bottom: 12rem;
 }
 
 .padronizacao-item-title {
@@ -605,11 +568,7 @@ header .navbar-toggler {
   font-weight: 600 !important;
 }
 
-.pages-title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
+
 
 .pages-p {
   text-align: center;
@@ -635,7 +594,7 @@ header .navbar-toggler {
 }
 
 .more-info {
-  background: linear-gradient(to bottom,  #00218e,#a6a4a4);
+  background-color: #000;
   /* margin-top: 20px; */
   padding-top: 50px;
 }
@@ -645,10 +604,6 @@ header .navbar-toggler {
   font-size: 16px;
 }
 
-.more-info p span {
-  font-weight: 600;
-  font-size: 20px;
-}
 
 .more-info h2 {
   color: #fff;
@@ -660,9 +615,8 @@ span.detail {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #00C5FF;
+  background-color: #028dbb;
   margin-bottom: 20px;
-  margin-top: 12px;
 }
 
 .video {
@@ -679,11 +633,6 @@ span.detail {
   height: 82px;
   margin-bottom: 50px;
 }
-
-.video .btn-download:hover {
-  background-color: #00C5FF;
-}
-
 
 
 .video::after {
@@ -866,7 +815,7 @@ iframe {
 }
 
 footer {
-  background: #333333;
+  background: #252525;
   padding: 30px 0px;
   color: #fff;
   text-align: center;
@@ -994,19 +943,22 @@ input[type="submit"] {
 
   .itemsbp span {
     font-weight: 600;
-    color: #29B6F6;
+    color: #028dbb;
   }
 
   .itembp {
     margin: 0 20px;
     text-align: center;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 3px 6px #236ea140;
     border: 1px solid #236ea138;
     border-radius: 10px;
-    padding: 30px 9px;
-    height: 425px;
+    padding: 30px;
+    height: max-content;
     margin-bottom: 27px;
+  }
+
+
   }
 
   li {
@@ -1032,7 +984,7 @@ input[type="submit"] {
   .cloud img{
     width: 100%;
   }
-}
+
 
 @media (max-width: 1200px) {
   .banner .mockup {
@@ -1164,20 +1116,16 @@ input[type="submit"] {
     width: 100%;
   }
 
+
   .container {
     padding-left: 30px;
     padding-right: 30px;
+    height: 1000px;
+    width: 500px;
+    background-color: red;
   }
 
-  header .container {
-    padding: 0 15px;
-  }
 
-  header .logo img {
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 62px;
-  }
 
   .banner {
     padding-top: 20px;

@@ -14,141 +14,330 @@
   <link rel="stylesheet" href="./styles/bootstrap/bootstrap.min.css">
 </head>
 
-<body style="overflow-x: hidden;">
-  <header class="header" style="background-color: #00218e;">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div style="display: flex; justify-content: center; margin-left: 15px;" class="container-fluid">
-          <div style="width: 15vh;" class="logo">
-            <a href="./index.html"><img src="./assets/logos/ForfFuel.png" class="img-fluid" alt="Logo Banco Pan."></a>
-          </div>
-          <div class="nav" id="navbarNav">
-            <ul class="navbar-nav">
-              <!-- <li class="nav-item"><a href="./cliente-area.html"><button class="client">Atualização de
-                    dados</button></a>
-              </li>
-              <li class="nav-item"><a href="./new-client.html"><button style="background-color: #00C5FF">Cadastro
-                    Cliente</button></a></li> -->
-            </ul>
-          </div>
-        </div>
-      </nav>
+<body>
+  <header class="header">
+    <div>
+      <img src="./assets/logos/ForfFuel.png" style="width: 100px" alt="Logo Ford Fuel">
+    </div>
+    <div class="div__menu__Header">
+      <a class="menu__Header" href="#Proposta">Proposta</a>
+      <a class="menu__Header" href="#Arquitetura">Arquitetura</a>
+      <a class="menu__Header" href="#Vantagens">Vantagens</a>
     </div>
   </header>
 
 
 
-  <section id="padronizacao" class="more-info">
-    <div class="itemsbp">
-      <div class="row">
-        <h2 class="title_bd">Banco de Dados</h2>
-        <div class="col-md-6 animate-item animate__animated animate__fadeInUp">
-          <div class="itembp">
-            <h4>Oracle</h4>
-            <span class="detail"></span>
-            <ul>
-              <li><span>Manutenção: </span>As tabelas armazenam índice - organizado.</li>
-              <li><span>Proteção: </span>Logins autenticados no nível da instância e no banco de dados.</li>
-              <li><span>Suporte: </span>Fornece notas técnicas, descrições de erros, scripts, sem custo adicional.
-              </li>
-              <li><span>Backup: </span>Permite backups completos, parciais e incrementais</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 animate-item animate__animated animate__fadeInUp">
-          <div class="itembp">
-            <h4>Big Query</h4>
-            <span class="detail"></span>
-            <ul>
-              <li><span>Manutenção: </span>Atualização estatística automática</li>
-              <li><span>Proteção: </span>Usuário autenticado via token de banco de dados</li>
-              <li><span>Suporte: </span>Chamada de suporte cobrada por cada caso de suporte.</li>
-              <li><span>Backup: </span>Backups de BD completos, nível de arquivo, incrementais e diferenciais.</li>
-            </ul>
-          </div>
-        </div>
-        <p class="why">Escolhemos o <span>BigQuery</span> pelo fato da <span>Ford</span> já utilizar este Banco
-          de Dados e poderemos reutilizar a
-          instância deles. Além deste fato, o BigQuery é um dos <span>melhores do mercados</span>, e um dos
-          mais atuais,
-          assim gerando <span>confiabilidade e qualidade</span>.</p>
-      </div>
-    </div>
-    <div class="background">
-      <div class="pages" id="padronizacao">
-        <div class="container center-padron">
-          <h2 class="title_desp_dado">Arquitetura Ford Fuel</h2>
-          <p class="pages-p">A seguir, segue as explicações das tecnologias usadas para o desenvolvimento, com suas
-            específicações e aplicabilidade no projeto.</p>
-          <div class="row row-lang-div">
-            <div class="col-md-6 img-lang">
-              <img src="./assets/images/icons8-logotipo-da-primavera-240.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-6 img-lang">
-              <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Java Spring Boot</span><br><br>
-                Será utilizado o SDK 17 do Java no desenvolvimento de APIs (Application Programming Interfaces),
-                seguindo a arquitetura de microsserviços.
-              </p>
-            </div>
-          </div>
-        </div>
+  <section id="Proposta">
+    <h1 class="titulo">Revolução no Abastecimento</h1>
+    <span class="detail"></span>
+    <div class="texto">
+      <p>Imagine nunca mais se preocupar em abastecer seu veículo com <span class="texto_destaque">combustível
+          adulterado</span>. Com o
+        <span class="texto_destaque">Ford Fuel</span>, essa
+        preocupação se torna coisa do passado. Nosso projeto traz uma proposta <span
+          class="texto_destaque">revolucionária</span> para a
+        indústria de
+        combustíveis brasileira, com o compromisso de tornar a experiência de abastecimento mais segura, transparente e
+        confiável para todos.</p>
+      <p>No Brasil, a comercialização de combustível adulterado é um <span class="texto_destaque">problema
+          persistente</span> que afeta milhões de
+        motoristas, o meio ambiente e a economia. A adulteração de combustíveis compromete o desempenho dos motores,
+        levanta preocupações sobre a segurança nas estradas e contribui para a poluição do ar. É um problema que exige
+        uma <span class="texto_destaque">solução inovadora</span>, e o Ford Fuel está aqui para oferecer exatamente
+        isso.</p>
+      <p>Nossa abordagem única baseia-se em <span class="texto_destaque">três pilares</span> essenciais:</p>
+      <div class="pilares_ford_fuel">
 
-        <div class="row" style="margin-bottom: 90px; align-items: center; justify-content: center;">
-          <div class="col-md-6">
-            <p class="padronizacao-item-p"> <span class="padronizacao-item-title">API de Scraping em
-                Python</span><br><br>
-              Uma requisição GET será originada a partir do back-end da aplicação, contendo o endereço como parâmetro.
-              Esse endereço será empregado nas buscas realizadas pelo programa de web scraping programado. Se o nome
-              do estabelecimento for encontrado, ele será devolvido à aplicação de origem.</p>
-          </div>
-          <div class="col-md-6 img-lang">
-            <img src="./assets/images/icons8-python-240.png" alt="" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="row row-lang-div">
-          <div class="col-md-6 img-lang">
-            <img src="./assets/images/icons8-flutter-240.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-6">
-            <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Front-End em Flutter</span><br><br>
-              Será utilizado no Visual Studio Code para criar as telas adicionais e fazer modificações em algumas
-              telas do aplicativo Ford Pass, a fim de incluir funcionalidades extras.</p>
-          </div>
-        </div>
-
-        <div class="row" style="margin-bottom: 110px;">
-          <div class="col-md-6">
-            <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Power BI</span><br><br>
-              Será utilizado para integrar a base de dados e automatizar a criação de relatórios semanais através de
-              dashboards.
-            </p>
-          </div>
-          <div class="col-md-6 img-lang">
-            <img src="./assets/images/icons8-power-bi-250.png" alt="" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="text-mobile">
-          <h2 class="title_etl" style="text-align: center;">Transação de dados para o Banco de Dados</h2>
+        <div class="pilar_ford col-md-6 animate-item animate__animated animate__fadeInUp">
+          <h1 class="subtitulo">Histórico Abastecimento</h1>
           <span class="detail"></span>
-          <p class="pages-transacao" style="text-align: center;">Para enviar esses dados para o banco de dados, usaremos
-            REST
-            APIs, que são requisições que
-            permitem a comunicação de dados entre aplicações.
+          <ul>
+            <li><span class="texto_destaque">Ford Pass</span>: Implementação da funcionalidade ao aplicativo.</li>
+            <li><span class="texto_destaque">Localização</span>: Informações da localização do abastecimento.</li>
+            <li><span class="texto_destaque">Informações</span>: Informações sobre o combustível do abastecimento.</li>
+            <li><span class="texto_destaque">Disponibilidade</span>: Permanencia do histórico de abastecimento ao app.
+            </li>
+          </ul>
+        </div>
+        <div class="pilar_ford col-md-6 animate-item animate__animated animate__fadeInUp">
+          <h1 class="subtitulo">Denúncia Automática</h1>
+          <span class="detail"></span>
+          <ul>
+            <li><span class="texto_destaque">Periodização</span>: Relatórios de denúncia gerados mensalmente.</li>
+            <li><span class="texto_destaque">Indicadores</span>: Indicadores que permitem a ampliação de ciencia.</li>
+            <li><span class="texto_destaque">Relatórios</span>: Dashboards informativas com indicadores gerais.</li>
+            <li><span class="texto_destaque">Automatização</span>: Automatização da atualização de dados .</li>
+          </ul>
+        </div>
+        <div class="pilar_ford col-md-6 animate-item animate__animated animate__fadeInUp">
+          <h1 class="subtitulo">Parcerias com Postos</h1>
+          <span class="detail"></span>
+          <ul>
+            <li><span class="texto_destaque">Contatação</span>: identificação e abordagem desses estabelecimentos.</li>
+            <li><span class="texto_destaque">Parceria</span>: Usuário autenticado via token de banco de dados</li>
+            <li><span class="texto_destaque">Reconhecimento</span>: Pesquisas no banco para obtenção desses.</li>
+            <li><span class="texto_destaque">Divulgação</span>: Maximização do alcance e o impacto da iniciativa.
+              e diferenciais.</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <section style="background-color: #979797;" id="Arquitetura">
+    <h1 class="titulo white_font">Arquitetura de Solução</h1>
+
+    <div class="texto white_font">
+      <p>
+        Bem-vindo à <span class="texto_destaque_2">era revolucionária</span> do abastecimento de combustível com a
+        arquitetura <span class="texto_destaque_2">Ford Fuel</span>. Estamos propondo uma transformanção geral na
+        maneira é exergado o abastecimento, combinando tecnologia de ponta com parcerias estratégicas para garantir o
+        fim da comercialização
+        do <span class="texto_destaque_2">combustível adulterado</span> e a prevalencia unica e exclusiva de <span
+          class="texto_destaque_2">combustível de qualidade</span>. Neste guia, vamos explorar em
+        detalhes como nossa arquitetura pode vir a moldar
+        futuro, tornando o abastecimento mais <span class="texto_destaque_2">transparente e confiável</span></p>
+      <div class="container_img_texto">
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/ia-etl.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Obtenção de Dados</h1>
+          <p class="texto">
+            A Ford, com seus investimentos em tecnologia, apresenta inúmeros sensores equipados em seus veículos
+            e dois deles desempenham um papel crucial em nossa iniciativa, o <span class="texto_destaque_2">sensor de
+              coordenadas</span> e o <span class="texto_destaque_2">sensor de qualidade de combustível</span>. Estes são
+            os dados
+            que iremos necessitar em nossa solução...
           </p>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
+      <div class="container_img_texto">
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Envio de Dados</h1>
+          <p class="texto">
+            A <span class="texto_destaque_2">TMC (Transportation Mobility Cloud)</span> é a tecnologia interna da Ford
+            que desempenha o papel de <span class="texto_destaque_2">transferência de dados</span> provenientes desses
+            sensores para o banco de dados...
+          </p>
+
+        </div>
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/etl_bp.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="container_img_texto">
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/undraw_updates_re_o5af.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Armazenamento de Dados</h1>
+          <p class="texto">
+            Dado que não temos acesso à modelagem do banco de dados da Ford, criamos um banco de dados de demonstração
+            usando o <span class="texto_destaque_2">Big Query</span>, uma tecnologia já adotada pela Ford. Sua modelagem
+            e script de criação estão <span class="texto_destaque_2">disponíveis para download</span>...
+          </p>
+        </div>
+      </div>
   </section>
 
-  <section class="etl" id="etl-id">
-    <div id="etl" class="background">
-      <div class="pages" id="etl">
+  <section id="Proposta">
+    <div class="texto">
+      <div class="container_img_texto">
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Obtendo o Endereço</h1>
+          <p class="texto">
+            Para enriquecer o histórico de abastecimento, construímos uma <span class="texto_destaque">API</span>
+            em <span class="texto_destaque">Java</span> onde, ao enviarmos as coordenadas ao serviço <span
+              class="texto_destaque">OpenCage</span> o mesmo nos retorna informações do endereço como <span
+              class="texto_destaque">Rua</span>, <span class="texto_destaque">Bairro</span>, <span
+              class="texto_destaque">Cidade</span>, <span class="texto_destaque">Estado</span> e <span
+              class="texto_destaque">CEP</span>. Esses dados, ao serem retornados são armazenados no banco de dados
+            através de outra API, tambem em JAVA.
+            (<a style="  text-decoration: none;
+            color: #028dbb; font-weight: 600;" href="https://opencagedata.com/dashboard">Saiba mais...</a>)
+          </p>
+        </div>
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/api.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="container_img_texto">
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/apirest.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Nome do Posto</h1>
+          <p class="texto">
+            Com os dados do endereço em mãos, podemos agora obter o nome do posto. Com as coordenadas aliadas aos
+            ultimos dados
+            obtidos, nossa <span class="texto_destaque">API</span> em <span class="texto_destaque">Python</span> utiliza
+            uma lógica de <span class="texto_destaque">web-scraping</span>
+            para encontrar o nome do estabelecimento. Como nenhuma coordenada retorna o número do endereço, nosso
+            retorno está sucetível à falhas, e é aí que entra o próximo passo...
+          </p>
+        </div>
+      </div>
+      <div class="container_img_texto">
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Confirmação do Nome</h1>
+          <p class="texto">
+            Dentro da mesma requisição, montamos uma lógica de <span class="texto_destaque">machine learning</span> que,
+            aliada ao web scrapping tende a aprender e aprimorar as respostas dadas, eliminando os erros ao longo do
+            tempo. Ao final, esses dados são retornados e armazenados no banco com uma outra API em Java...
+          </p>
+        </div>
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/undraw_order_confirmed_re_g0if (1).svg" alt=""
+            class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section style="background-color: #979797;" id="Arquitetura">
+    <div class="texto white_font">
+      <div class="container_img_texto">
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/rest.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Disponibilização dos Dados</h1>
+          <p class="texto">
+            Com esses dados armazenados, agora podemos apresentar ao clientes pela correta segmentação de veículo.
+            Para tal, desenvolvemos uma réplica das telas do aplicativo Ford Pass com suas devida modificações para a
+            implementação do Ford Fuel. Para tal, utilizamos <span class="texto_destaque_2">Dart</span>, <span
+              class="texto_destaque_2">Flutter</span> e construimos o back-end de comunicação com
+            <span class="texto_destaque_2">SpringBoot</span> em Java... Nele, o usuário podera ver os dados citados
+            anteriormente...
+
+
+          </p>
+        </div>
+      </div>
+      <div class="container_img_texto">
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Denúncia de Adulteração</h1>
+          <p class="texto">
+            Com os registros de abastecimetos armazenado no Banco, criamos uma conexão entre o Big Query e o <span
+              class="texto_destaque_2">Power BI</span>. Neste construimos uma dashboard com <span
+              class="texto_destaque_2">indicativos</span> relevantes que
+            facilitarão a abordagem dos órgãos fiscais
+          </p>
+
+        </div>
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/etl_bp.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="container_img_texto">
+        <div class="col-md-6 img-lang">
+          <img style="margin-top: 32px" src="./assets/images/undraw_updates_re_o5af.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 item-etl">
+          <h1 class="subtitulo" style="font-weight: bold;">Armazenamento de Dados</h1>
+          <p class="texto">
+            Dado que não temos acesso à modelagem do banco de dados da Ford, criamos um banco de dados de demonstração
+            usando o <span class="texto_destaque_2">Big Query</span>, uma tecnologia já adotada pela Ford. Sua modelagem
+            e script de criação estão <span class="texto_destaque_2">disponíveis para download</span>...
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <h1 class="titulo">Revolução no Abastecimento</h1>
+  <div class="itemsbp">
+    <div class="row">
+      <h2 class="title_bd">Banco de Dados</h2>
+
+      <p class="why">Escolhemos o <span>BigQuery</span> pelo fato da <span>Ford</span> já utilizar este Banco
+        de Dados e poderemos reutilizar a
+        instância deles. Além deste fato, o BigQuery é um dos <span>melhores do mercados</span>, e um dos
+        mais atuais,
+        assim gerando <span>confiabilidade e qualidade</span>.</p>
+    </div>
+  </div>
+  <div class="background">
+    <div class="pages">
+      <div id="Arquitetura" class="container center-padron">
+        <h2 class="title_desp_dado">Arquitetura Ford Fuel</h2>
+        <p class="pages-p">A seguir, segue as explicações das tecnologias usadas para o desenvolvimento, com suas
+          específicações e aplicabilidade no projeto.</p>
+        <div class="row row-lang-div">
+          <div class="col-md-6 img-lang">
+            <img src="./assets/images/icons8-logotipo-da-primavera-240.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 img-lang">
+            <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Java Spring Boot</span><br><br>
+              Será utilizado o SDK 17 do Java no desenvolvimento de APIs (Application Programming Interfaces),
+              seguindo a arquitetura de microsserviços.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 90px; align-items: center; justify-content: center;">
+        <div class="col-md-6">
+          <p class="padronizacao-item-p"> <span class="padronizacao-item-title">API de Scraping em
+              Python</span><br><br>
+            Uma requisição GET será originada a partir do back-end da aplicação, contendo o endereço como parâmetro.
+            Esse endereço será empregado nas buscas realizadas pelo programa de web scraping programado. Se o nome
+            do estabelecimento for encontrado, ele será devolvido à aplicação de origem.</p>
+        </div>
+        <div class="col-md-6 img-lang">
+          <img src="./assets/images/icons8-python-240.png" alt="" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row row-lang-div">
+        <div class="col-md-6 img-lang">
+          <img src="./assets/images/icons8-flutter-240.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Front-End em Flutter</span><br><br>
+            Será utilizado no Visual Studio Code para criar as telas adicionais e fazer modificações em algumas
+            telas do aplicativo Ford Pass, a fim de incluir funcionalidades extras.</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 110px;">
+        <div class="col-md-6">
+          <p class="padronizacao-item-p"> <span class="padronizacao-item-title">Power BI</span><br><br>
+            Será utilizado para integrar a base de dados e automatizar a criação de relatórios semanais através de
+            dashboards.
+          </p>
+        </div>
+        <div class="col-md-6 img-lang">
+          <img src="./assets/images/icons8-power-bi-250.png" alt="" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="text-mobile">
+        <h2 class="title_etl" style="text-align: center;">Transação de dados para o Banco de Dados</h2>
+        <span class="detail"></span>
+        <p class="pages-transacao" style="text-align: center;">Para enviar esses dados para o banco de dados,
+          usaremos
+          REST
+          APIs, que são requisições que
+          permitem a comunicação de dados entre aplicações.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <section class="etl">
+    <div class="background">
+      <div class="pages">
         <div class="container">
-          <div class="row" style="margin-bottom: 70px;">
+          <div id="Vantagens" class="row" style="margin-bottom: 70px;">
             <h2 class="title_etl" style="text-align: center; margin-top: 4rem;">Por que utilizar Ford Fuel ?</h2>
             <p class="pages-p" style="text-align: center;">Nossa solução propõe a integração do medidor de qualidade de
               combustível diretamente no sistema dos carros. Isso significa que os motoristas terão acesso imediato às
@@ -188,7 +377,7 @@
 
   </section>
 
-  <div class="download" id="planos">
+  <div class="download">
     <div class="container">
       <div class="row">
         <div class="col center">
@@ -198,10 +387,10 @@
             prosta <span>mais
               detalhada!</span></p>
           <div class="buttons-download">
-            <a href="/assets/files/Sprint 4 (The Plenos).docx.pdf" target="_blank"><button>Documentação Ford
+            <a href="./assets/files/documentacao_ford_fuel.pdf" download><button>Documentação Ford
                 Fuel</button></a>
-            <a href="/assets/files/Script.txt" target="_blank"><button>Comandos DDL</button></a>
-            <a href="/assets/files/ModeloRelacional.pdf" target="_blank"><button>Modelo Relacional</button></a>
+            <a href="./assets/files/Script.txt" download><button>Comandos DDL</button></a>
+            <a href="./assets/files/ModeloRelacional.pdf" download><button>Modelo Relacional</button></a>
             <a href="/assets/files/Documentação Python.pdf" target="_blank"><button disabled
                 style="background-color: gray;">API em Python</button></a>
           </div>
@@ -212,7 +401,6 @@
 
   <div class="video">
     <h2 class="video-title" style="color: #00218e;">Ford Fuel: A Solução para o Ford</h2>
-    <!-- --TODO colocar o video do ultimo pitch -->
     <iframe width="100%" height="515" src="https://www.youtube.com/embed/M9I5FjRoR8c"
       title="The Plenos - Challenge Ford - Sprint 4" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -271,11 +459,16 @@
       </div>
     </div>
   </section>
-  <section class="banner">
+
+  <section style="background-color: #343434;">
+    <div>
+      <h1 class="titulo white_font">The Plenos</h1>
+    </div>
+
     <div class="container">
-      <div class="row">
+
+      <div class="row white_font">
         <div class="col-md-4 nomes">
-          <h1>The Plenos</h1>
           <ul>
             <li>Felipe Otto <span>89108</span> </li>
             <li>Pedro Argentati <span>88246</span></li>
@@ -284,14 +477,11 @@
             <li>João Henrique Pinto <span>86913</span> </li>
           </ul>
         </div>
-        <!-- <div class="col imagem-mobile">
-          <img class="img-group" src="/assets/images/undraw_team_collaboration_re_ow29.svg" alt="">
-        </div> -->
       </div>
     </div>
   </section>
 
-  <a href="#" id="link-topo" title="Clique para voltar ao topo">&#9650;</a>
+
   <footer>
     <div class="container">
 
